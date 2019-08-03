@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content=""> 
+<title>Email signature generator</title>
+</head>
+<body>
+<style>
+body{ width:900px; margin:50px auto;font-size:13px; font-family: 'LatoLatinWeb', 'LatoWeb', 'Lato', sans-serif;}
+.show{ margin:20px auto; float:left;}
+textarea{ float:left; width:100%; height:354px; margin:10px auto;background-color: #0078d7;color:#fff }
+.cl{ clear:both}
+::-moz-selection{background:#fff;color: #000;} 
+
+::selection {background:#fff; color:#000;} 
+</style>
+<h2>Email Signature Generator</h2>
+
+<?php
+if($_POST){
+?>
+
+<div class="show">
+
+
+<table border="0" cellspacing="0" cellpadding="0" width="595" style="width:450pt; border-collapse:collapse"><tbody><tr><td width="150" style="border:none;border-right:solid #BFBFBF 1.0pt; padding:0;margin:0;"><p align="center" style="text-align: center; margin: 0;padding:0;"><span><img border="0" height="50" src="http://www.evenlighting.com/signature/img/even.png" ></span></p></td><td width="300" style="padding:0 0 0 25pt"><p align="left" style="text-align: left; margin:0;padding:0 0 2pt 0;font-size: 10pt; font-family: 'LatoLatinWeb', 'LatoWeb', 'Lato', sans-serif;color:#0067B8;"><span style="font-size:11.0pt; font-family:'LatoLatinWeb', 'LatoWeb', 'Lato', sans-serif;color:#0067B8;"><b><?php echo $_POST['enname']; ?></b></span> &nbsp;·&nbsp; <?php echo $_POST['enname2']; ?></p><p align="left" style="text-align: left; line-height: 12pt; margin:0; padding:0.2pt 0;font-family: 'LatoLatinWeb', 'LatoWeb', 'Lato', sans-serif;"><span style="font-size:9.0pt;font-family:'LatoLatinWeb', 'LatoWeb', 'Lato', sans-serif;">Mobile: +86 <?php echo $_POST['enname3']; ?></span><span style="font-size:9.0pt;font-family:'LatoLatinWeb', 'LatoWeb', 'Lato', sans-serif;padding-left:12pt">Tel: +86 579 <?php echo $_POST['enname4']; ?></span></p><p align="left" style="text-align: left; line-height: 12pt; margin:0; padding:0.2pt 0; font-family: 'LatoLatinWeb', 'LatoWeb', 'Lato', sans-serif;"><span style="font-size:9.0pt;font-family:'LatoLatinWeb', 'LatoWeb', 'Lato', sans-serif;">E-mail: <?php echo $_POST['enname5']; ?></span><span style="font-size:9.0pt;font-family:'LatoLatinWeb', 'LatoWeb', 'Lato', sans-serif;padding-left:12pt">Web: www.evenlighting.com</span></p><p align="left" style="text-align: left; line-height: 12pt;margin: 5pt 0 0 0;padding:0;  font-size: 11pt;"><span><img border="0"  height="16"  style="margin:0" src="http://www.evenlighting.com/signature/img/sign-mail_facebook.gif"></span>&nbsp;&nbsp;<span><img border="0"  height="16"  style="margin:0" src="http://www.evenlighting.com/signature/img/sign-mail_instagram.gif"></span>&nbsp;&nbsp;<span><img border="0"  height="16"  style="margin:0" src="http://www.evenlighting.com/signature/img/sign-mail_linkedin.gif"></span>&nbsp;&nbsp;<span><img border="0"  height="16"  style="margin:0" src="http://www.evenlighting.com/signature/img/sign-mail_youtube.gif"></span>&nbsp;&nbsp;</p></td></tr></tbody></table>
+
+
+</div>
+
+<?php }?>  
+
+
+
+
+
+
+<div class="cl"></div>
+
+
+<?php if($_POST){?>
+<textarea id="con" onclick="Onclicklink()"><table border="0" cellspacing="0" cellpadding="0" width="595" style="width:450pt; border-collapse:collapse"><tbody><tr><td width="150" style="border:none;border-right:solid #BFBFBF 1.0pt; padding:0;margin:0;"><p align="center" style="text-align: center; margin: 0;padding:0;"><span><img border="0" height="50" src="http://www.evenlighting.com/signature/img/even.png" ></span></p></td><td width="300" style="padding:0 0 0 25pt"><p align="left" style="text-align: left; margin:0;padding:0 0 2pt 0;font-size: 10pt; font-family: 'LatoLatinWeb', 'LatoWeb', 'Lato', sans-serif;color:#0067B8;"><span style="font-size:11.0pt; font-family:'LatoLatinWeb', 'LatoWeb', 'Lato', sans-serif;color:#0067B8;"><b><?php echo $_POST['enname']; ?></b></span> &nbsp;·&nbsp; <?php echo $_POST['enname2']; ?></p><p align="left" style="text-align: left; line-height: 12pt; margin:0; padding:0.2pt 0;font-family: 'LatoLatinWeb', 'LatoWeb', 'Lato', sans-serif;"><span style="font-size:9.0pt;font-family:'LatoLatinWeb', 'LatoWeb', 'Lato', sans-serif;">Mobile: +86 <?php echo $_POST['enname3']; ?></span><span style="font-size:9.0pt;font-family:'LatoLatinWeb', 'LatoWeb', 'Lato', sans-serif;padding-left:12pt">Tel: +86 579 <?php echo $_POST['enname4']; ?></span></p><p align="left" style="text-align: left; line-height: 12pt; margin:0; padding:0.2pt 0; font-family: 'LatoLatinWeb', 'LatoWeb', 'Lato', sans-serif;"><span style="font-size:9.0pt;font-family:'LatoLatinWeb', 'LatoWeb', 'Lato', sans-serif;">E-mail: <?php echo $_POST['enname5']; ?></span><span style="font-size:9.0pt;font-family:'LatoLatinWeb', 'LatoWeb', 'Lato', sans-serif;padding-left:12pt">Web: www.evenlighting.com</span></p><p align="left" style="text-align: left; line-height: 12pt;margin: 5pt 0 0 0;padding:0;  font-size: 11pt;"><span><img border="0"  height="16"  style="margin:0" src="http://www.evenlighting.com/signature/img/sign-mail_facebook.gif"></span>&nbsp;&nbsp;<span><img border="0"  height="16"  style="margin:0" src="http://www.evenlighting.com/signature/img/sign-mail_instagram.gif"></span>&nbsp;&nbsp;<span><img border="0"  height="16"  style="margin:0" src="http://www.evenlighting.com/signature/img/sign-mail_linkedin.gif"></span>&nbsp;&nbsp;<span><img border="0"  height="16"  style="margin:0" src="http://www.evenlighting.com/signature/img/sign-mail_youtube.gif"></span>&nbsp;&nbsp;</p></td></tr></tbody></table></textarea>
+<?php }?>
+
+<!--<A href="javascript:Onclicklink()">点击我复制</A>-->
+<SCRIPT language=javascript type=text/javascript> 
+<!--
+function Onclicklink() 
+{ 
+var con = document.getElementById('con');
+con.select();
+//var str = con.innerHTML
+//window.clipboardData.setData("Text",str);
+//document.execCommand("Copy");
+//setCopy(str);
+//alert("已复制");
+} 
+/*
+function setCopy(_sTxt){
+try{
+if(window.clipboardData) {
+    window.clipboardData.setData("Text", _sTxt);
+} else if(window.netscape) {
+    netscape.security.PrivilegeManager.enablePrivilege('UniversalXPConnect');
+    var clip = Components.classes['@mozilla.org/widget/clipboard;1'].createInstance(Components.interfaces.nsIClipboard);
+    if(!clip) return;
+    var trans = Components.classes['@mozilla.org/widget/transferable;1'].createInstance(Components.interfaces.nsITransferable);
+    if(!trans) return;
+    trans.addDataFlavor('text/unicode');
+    var str = new Object();
+    var len = new Object();
+    var str = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);
+    var copytext = _sTxt;
+    str.data = copytext;
+    trans.setTransferData("text/unicode", str, copytext.length*2);
+    var clipid = Components.interfaces.nsIClipboard;
+    if (!clip) return false;
+    clip.setData(trans, null, clipid.kGlobalClipboard);
+}
+}catch(e){}
+}*/
+-->
+</SCRIPT>
+
+
+<div class="cl"></div>
+
+<form action="" method="post">
+<table width="500" border="0" cellspacing="0" cellpadding="0" class="in" id="a">
+
+   
+  
+  <tr>
+    <td>Job Title</td>
+    
+  <td>
+  <select style="width:204px;height:21px"  name="enname2" size="1" id="enname2" value="<?php if($_POST){ echo $_POST['enname2']; }?>">
+    <option>General Manager</option>
+    <option>Sales Manager</option>
+	<option>Logistics Manager</option>
+	<option>Product Engineer</option>
+    <option>Quality Engineer</option>
+   </select>	
+  </td>
+  </tr>
+  
+
+  
+      <tr>
+    <td>English Name</td>
+	<td><input style="width:200px" type="text" name="enname" id="enname" placeholder="格式: Nesta" value="<?php if($_POST){ echo $_POST['enname']; }?>"/></td>
+  </tr>
+   <tr>
+    <td>Email</td>
+    <td><input style="width:200px" type="text" name="enname5" id="enname5" placeholder="格式: nesta@nhclighting.com" value="<?php if($_POST){ echo $_POST['enname5']; }?>"/></td>
+  </tr>
+
+  <tr>
+    <td>Mobile Phone (+86 )</td>
+    <td><input style="width:200px" type="text" name="enname3" id="enname3" placeholder="格式: 137 5790 9953" value="<?php if($_POST){ echo $_POST['enname3']; }?>"/></td>
+  </tr>
+  <tr>
+    <td>Tel Phone (+86 579 )</td>
+    <td><input style="width:200px"  name="enname4" size="1" id="enname4" placeholder="格式: 8558 5146" value="<?php if($_POST){ echo $_POST['enname4']; }?>"></td>
+  </tr>
+  
+</table>
+</br >
+
+<input name="submit" type="submit"  value="提 交" />
+</form>
+
+<P><a style="color:red;text-decoration:none;" href="http://evenlighting.com/signature/guide.php">*如何设置foxmail签名档教程 >></a></p>
+
+
+</body>
+</html>
